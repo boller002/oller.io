@@ -1,0 +1,32 @@
+{
+  "name": "boller.dev",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "18": "^0.0.0",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.x",
+    "@mui/material": "^5.x",
+    "react": "^18.x",
+    "react-dom": "^18.x",
+    "react-router-dom": "^6.x",
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
