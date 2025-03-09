@@ -16,6 +16,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
+import logo from "../assets/logo-white.png";
 
 const Header = () => {
   const theme = useTheme();
@@ -65,9 +66,7 @@ const Header = () => {
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
           {/* Placeholder for LOGO */}
-          <Typography variant="h6" component="div" sx={{ fontWeight: "bold" }}>
-            boller
-          </Typography>
+          <img src={logo} width="80"/>
 
           {isMobile ? (
             <>

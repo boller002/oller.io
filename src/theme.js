@@ -15,7 +15,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: "'Helvetica Neue', Arial, sans-serif",
+    fontFamily: "Menlo, Courier New, sans-serif",
     h1: {
       fontSize: "3rem",
       fontWeight: 500

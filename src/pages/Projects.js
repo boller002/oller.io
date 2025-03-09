@@ -11,28 +11,16 @@ import {
   Button
 } from "@mui/material";
 
-import exampleImg from "../assets/logo.png";
+import exampleImg from "../assets/logo-black.png";
 
 const Projects = () => {
   // You can have an array of projects to map over
   const projects = [
     {
-      title: "Project One",
-      description: "Brief description of Project One.",
+      title: "SimpleRatingSystem.com",
+      description: "SimpleRatingSystem.com is a site that shows the simple rating system (SRS) rating for various sports leagues (e.g. NCAA Men's Basketball).",
       image: exampleImg,
-      link: "https://example.com"
-    },
-    {
-      title: "Project Two",
-      description: "Brief description of Project Two.",
-      image: exampleImg,
-      link: "https://example.com"
-    },
-    {
-      title: "Project Three",
-      description: "Brief description of Project Three.",
-      image: exampleImg,
-      link: "https://example.com"
+      link: "https://simpleratingsystem.com"
     }
   ];
 

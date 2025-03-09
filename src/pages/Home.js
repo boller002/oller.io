@@ -7,22 +7,17 @@ const Home = () => {
     <Container sx={{ mt: 5 }}>
       <Box sx={{ textAlign: "center", mb: 4 }}>
         <Typography variant="h1" sx={{ mb: 2 }}>
-          Hello, I'm [Your Name]
+          Welcome to boller.dev
         </Typography>
         <Typography variant="h3">
-          A placeholder for your short tagline or personal brand statement.
+          My name is Brian. I'm a full stack software engineer from Seattle, WA. 
         </Typography>
       </Box>
-      <Box sx={{ textAlign: "left" }}>
+      {/* <Box sx={{ textAlign: "left" }}>
         <Typography variant="body1" paragraph>
-          This is where you'll add more comprehensive “About Me” text, 
-          your background, and anything else you want visitors to know.
+          I'm using this site to showcase my blog and my projects.
         </Typography>
-        <Typography variant="body1" paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Praesent vel tortor facilisis, gravida libero non, rutrum ligula.
-        </Typography>
-      </Box>
+      </Box> */}
     </Container>
   );
 };
