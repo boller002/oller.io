@@ -65,8 +65,9 @@ const Header = () => {
         }}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          {/* Placeholder for LOGO */}
-          <img src={logo} width="80"/>
+          <RouterLink to="/">
+            <img src={logo} width="80" style={{ cursor: 'pointer' }}/>
+          </RouterLink>
 
           {isMobile ? (
             <>
