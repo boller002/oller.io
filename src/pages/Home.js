@@ -10,7 +10,7 @@ const Home = () => {
           Welcome to boller.tech
         </Typography>
         <Typography variant="h3">
-          My name is Brian. I'm a full stack software engineer from Seattle, WA. 
+          My name is Brian. I'm a full stack software engineer in Seattle, WA.
         </Typography>
       </Box>
       {/* <Box sx={{ textAlign: "left" }}>
