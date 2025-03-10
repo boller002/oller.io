@@ -28,12 +28,24 @@ const theme = createTheme({
       fontSize: "1.5rem",
       fontWeight: 400
     },
+    h4: {
+      fontSize: "1.25rem",
+      fontWeight: 400
+    },
+    h5: {
+      fontSize: "1.125rem",
+      fontWeight: 400
+    },
+    h6: {
+      fontSize: "1.0625rem",
+      fontWeight: 400
+    },
     body1: {
       fontSize: "1rem",
       lineHeight: 1.6
     },
     body2: {
-      fontSize: "0.875rem",
+      fontSize: "0.75rem",
       lineHeight: 1.6
     }
   }

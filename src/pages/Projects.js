@@ -40,7 +40,7 @@ const Projects = () => {
                 alt={project.title}
               />
               <CardContent sx={{ flexGrow: 1 }}>
-                <Typography variant="h5" gutterBottom>
+                <Typography variant="h7" gutterBottom>
                   {project.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">

@@ -11,15 +11,15 @@ const Blog = () => {
       </Typography>
       <Box sx={{ mb: 2 }}>
         <Typography variant="h5" gutterBottom>
-          <Link component={RouterLink} to="/blog/sample-post" underline="hover">
-            Sample Blog Post
+          <Link component={RouterLink} to="/blog/fundamental-projects" underline="hover">
+            Fundamental Projects
           </Link>
         </Typography>
         <Typography variant="body2" sx={{ color: "text.secondary" }}>
           Date: March 08, 2025
         </Typography>
         <Typography variant="body1" paragraph sx={{ mt: 1 }}>
-          A short excerpt for the sample post. Click the title to read more.
+          Projects new software engineers should complete to more strongly grasp a number of web development technologies.
         </Typography>
       </Box>
       {/* Add more blog posts here as you create them */}
