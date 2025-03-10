@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import FundamentalProjects from "./pages/posts/FundamentalProjects";
+import StaticWebsite from "./pages/posts/StaticWebsite";
 import Todo from "./pages/posts/Todo";
 import Projects from "./pages/Projects";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="blog" element={<Blog />} />
         <Route path="blog/fundamental-projects" element={<FundamentalProjects />} />
+        <Route path="blog/static-website" element={<StaticWebsite />} />
         <Route path="projects" element={<Projects />} />
         <Route path="/blog/todo" element={<Todo />} />
       </Routes>

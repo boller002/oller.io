@@ -19,10 +19,23 @@ const Blog = () => {
           Date: March 08, 2025
         </Typography>
         <Typography variant="body1" paragraph sx={{ mt: 1 }}>
-          Projects new software engineers should complete to more strongly grasp a number of web development technologies.
+          In this post, I recommend projects that new software engineers should complete to more strongly grasp a number of web development technologies.
         </Typography>
       </Box>
-      {/* Add more blog posts here as you create them */}
+      <Box sx={{ mb: 2 }}>
+        <Typography variant="h5" gutterBottom>
+          <Link component={RouterLink} to="/blog/static-website" underline="hover">
+            Static Website
+          </Link>
+        </Typography>
+        <Typography variant="body2" sx={{ color: "text.secondary" }}>
+          Date: March 10, 2025
+        </Typography>
+        <Typography variant="body1" paragraph sx={{ mt: 1 }}>
+          In this post, I provide a high-level tutorial for building and hosting a static website in s3 served by a cloud distribution network (CDN).
+        </Typography>
+      </Box>
+    
     </Container>
   );
 };

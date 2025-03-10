@@ -1,6 +1,7 @@
 // src/pages/posts/FundamentalProjects.js
 import React from "react";
-import { Container, Typography, Box, List, ListItem, ListItemText, Link } from "@mui/material";
+import { Container, Typography, Box, List, ListItem, ListItemText, Link, ListItemIcon } from "@mui/material";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 const FundamentalProjects = () => {
   return (
@@ -13,7 +14,7 @@ const FundamentalProjects = () => {
           Date: March 08, 2025
         </Typography>
         <Typography variant="body1" sx={{ mt: 2 }}>
-          If you're looking to build a strong foundation in web development, hands-on projects are the best way to learn. This guide outlines essential projects that cover both frontend and backend development, hosting, and deployment. While I’ll use AWS, Java, React, and Material-UI as the baseline technologies, each can be substituted with your preferred stack.
+          If you're looking to build a strong foundation in web development, hands-on projects are the best way to learn. This guide outlines essential projects that cover both frontend and backend development, hosting, and deployment. While I’ll use AWS, Java, and React as the baseline technologies, each can be substituted with your preferred stack.
         </Typography>
 
         <Typography variant="h5" sx={{ mt: 3 }}>
@@ -24,14 +25,14 @@ const FundamentalProjects = () => {
         </Typography>
 
         <Typography variant="h6" sx={{ mt: 3 }}>Steps to Complete:</Typography>
-        <List>
-          <ListItem><ListItemText primary="Build a static website using HTML, CSS, and React." /></ListItem>
-          <ListItem><ListItemText primary="Host it on AWS S3 and serve it via CloudFront (CDN)." /></ListItem>
-          <ListItem><ListItemText primary="Register a custom domain (or use a free one from Freenom)." /></ListItem>
-          <ListItem><ListItemText primary="Configure Route 53 for DNS management." /></ListItem>
-          <ListItem><ListItemText primary="Enable HTTPS using AWS Certificate Manager." /></ListItem>
-        </List>
-        <Link href="/blog/todo">Read the full tutorial</Link>
+        <ul>
+          <li>Build a static website using React.</li>
+          <li>Host it on AWS S3 and serve it via CloudFront (CDN).</li>
+          <li>Register a custom domain (or use a free one from Freenom).</li>
+          <li>Configure Route 53 for DNS management.</li>
+          <li>Enable HTTPS using AWS Certificate Manager.</li>
+        </ul>
+        <Link href="/blog/static-website">Read the full tutorial</Link>
 
         <Typography variant="h5" sx={{ mt: 3 }}>
           2. Deploy a Dynamic Website, API, or React Server on AWS with a Custom Domain and HTTPS
@@ -41,13 +42,13 @@ const FundamentalProjects = () => {
         </Typography>
 
         <Typography variant="h6" sx={{ mt: 3 }}>Steps to Complete:</Typography>
-        <List>
-          <ListItem><ListItemText primary="Build a backend using Java (Spring Boot)." /></ListItem>
-          <ListItem><ListItemText primary="Deploy on an AWS EC2 instance." /></ListItem>
-          <ListItem><ListItemText primary="Use Nginx as a reverse proxy for better performance." /></ListItem>
-          <ListItem><ListItemText primary="Register a custom domain (or use a free option like DuckDNS)." /></ListItem>
-          <ListItem><ListItemText primary="Configure Route 53 for DNS and enable HTTPS with AWS ACM." /></ListItem>
-        </List>
+        <ul>
+          <li>Build a backend using Java (Spring Boot).</li>
+          <li>Deploy on an AWS EC2 instance.</li>
+          <li>Use Nginx as a reverse proxy for better performance.</li>
+          <li>Register a custom domain (or use a free option like DuckDNS).</li>
+          <li>Configure Route 53 for DNS and enable HTTPS with AWS ACM.</li>
+        </ul>
         <Link href="/blog/todo">Read the full tutorial</Link>
 
         <Typography variant="h5" sx={{ mt: 3 }}>
@@ -58,13 +59,13 @@ const FundamentalProjects = () => {
         </Typography>
 
         <Typography variant="h6" sx={{ mt: 3 }}>Steps to Complete:</Typography>
-        <List>
-          <ListItem><ListItemText primary="Use React (Material-UI) for the frontend." /></ListItem>
-          <ListItem><ListItemText primary="Set up a backend API using Java (Spring Boot)." /></ListItem>
-          <ListItem><ListItemText primary="Implement authentication with OAuth or JWT." /></ListItem>
-          <ListItem><ListItemText primary="Use AWS RDS (PostgreSQL or MySQL) for data storage." /></ListItem>
-          <ListItem><ListItemText primary="Deploy both frontend and backend separately." /></ListItem>
-        </List>
+        <ul>
+          <li>Use React (Material-UI) for the frontend.</li>
+          <li>Set up a backend API using Java (Spring Boot).</li>
+          <li>Implement authentication with OAuth or JWT.</li>
+          <li>Use AWS RDS (PostgreSQL or MySQL) for data storage.</li>
+          <li>Deploy both frontend and backend separately.</li>
+        </ul>
         <Link href="/blog/todo">Read the full tutorial</Link>
 
         <Typography variant="h5" sx={{ mt: 3 }}>
@@ -75,12 +76,12 @@ const FundamentalProjects = () => {
         </Typography>
 
         <Typography variant="h6" sx={{ mt: 3 }}>Steps to Complete:</Typography>
-        <List>
-          <ListItem><ListItemText primary="Use Git and GitHub for version control." /></ListItem>
-          <ListItem><ListItemText primary="Set up a CI/CD pipeline using GitHub Actions or AWS CodePipeline." /></ListItem>
-          <ListItem><ListItemText primary="Automate unit and integration tests." /></ListItem>
-          <ListItem><ListItemText primary="Deploy to staging/production environments automatically." /></ListItem>
-        </List>
+        <ul>
+          <li>Use Git and GitHub for version control.</li>
+          <li>Set up a CI/CD pipeline using GitHub Actions or AWS CodePipeline.</li>
+          <li>Automate unit and integration tests.</li>
+          <li>Deploy to staging/production environments automatically.</li>
+        </ul>
         <Link href="/blog/todo">Read the full tutorial</Link>
 
         <Typography variant="body1" sx={{ mt: 4 }}>
