@@ -7,7 +7,7 @@ const Home = () => {
     <Container sx={{ mt: 5 }}>
       <Box sx={{ textAlign: "center", mb: 4 }}>
         <Typography variant="h1" sx={{ mb: 2 }}>
-          Welcome to boller.tech
+          Welcome to oller.io
         </Typography>
         <Typography variant="h3">
           My name is Brian. I'm a full stack software engineer in Seattle, WA.
