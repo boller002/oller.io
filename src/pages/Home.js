@@ -1,24 +1,32 @@
-// src/pages/Home.js
 import React from "react";
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import logo from "../assets/logo.png";
 
 const Home = () => {
   return (
-    <Container sx={{ mt: 5 }}>
-      <Box sx={{ textAlign: "center", mb: 4 }}>
-        <Typography variant="h1" sx={{ mb: 2 }}>
-          Welcome to oller.io
-        </Typography>
-        <Typography variant="h3">
-          My name is Brian. I'm a full stack software engineer in Seattle, WA.
-        </Typography>
-      </Box>
-      {/* <Box sx={{ textAlign: "left" }}>
-        <Typography variant="body1" paragraph>
-          I'm using this site to showcase my blog and my projects.
-        </Typography>
-      </Box> */}
-    </Container>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        py: 12,
+        px: 2,
+        maxWidth: 800,
+        mx: "auto",
+      }}
+    >
+      <Box
+        component="img"
+        src={logo}
+        alt="oller.io"
+        sx={{ width: 220, mb: 4 }}
+      />
+      <Typography variant="h4" color="text.secondary">
+        Full stack software engineer in Seattle, WA
+      </Typography>
+    </Box>
   );
 };
 
