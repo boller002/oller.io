@@ -22,14 +22,14 @@ const StaticWebsite = () => {
           1. Build a Static Website Using React
         </Typography>
         <Typography variant="body1" sx={{ mt: 2 }}>
-          If you're new to React, there are many tutorials available to help you build a simple React website. Use Create React App (CRA) to scaffold your project.
+          If you're new to React, there are many tutorials available to help you build a simple React website. Use Vite to scaffold your project.
         </Typography>
 
         <Typography variant="h6" sx={{ mt: 3 }}>Steps to Complete:</Typography>
         <Box component="ul" sx={{ color: "text.primary" }}>
-          <li>Initialize a React project using Create React App:</li>
+          <li>Initialize a React project using Vite:</li>
           <Box component="code" sx={{ display: "block", bgcolor: "background.paper", color: "text.primary", p: 1, my: 1, borderRadius: 1 }}>
-            npx create-react-app my-static-site
+            npm create vite@latest my-static-site -- --template react
           </Box>
           <li>Develop your website with React components.</li>
           <li>Run <Box component="code" sx={{ bgcolor: "background.paper", px: 0.5, borderRadius: 0.5 }}>npm run build</Box> to generate static assets.</li>
@@ -47,7 +47,7 @@ const StaticWebsite = () => {
           <li>Upload the <Box component="code" sx={{ bgcolor: "background.paper", px: 0.5, borderRadius: 0.5 }}>build</Box> folder contents to an AWS S3 bucket.</li>
           <li>Set up CloudFront as a CDN for faster delivery.</li>
           <li>Create a certificate for HTTPS using AWS Certificate Manager.</li>
-          <li>Configure Route 53 to handle DNS resolution for your custom domain. Note that is is recommended to use Route53 as opposed to other domain registrars, as Route53 offers full functionality and works seamlessly with other AWS services.</li>
+          <li>Configure Route 53 to handle DNS resolution for your custom domain. Note that it is recommended to use Route 53 as opposed to other domain registrars, as Route 53 offers full functionality and works seamlessly with other AWS services.</li>
         </Box>
         <Link href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-cloudfront-overview.html" target="_blank" color="primary.main">Read the AWS guide</Link>
 
@@ -55,7 +55,7 @@ const StaticWebsite = () => {
           3. Fix CloudFront Subdirectory Access Issue
         </Typography>
         <Typography variant="body1" sx={{ mt: 2 }}>
-          Note that you should block all public access to your s3 bucket for added security. However, note that CloudFront does not automatically serve the correct index.html file for subdirectory paths. This leads to an AccessDenied error when visiting routes like <Box component="code" sx={{ bgcolor: "background.paper", px: 0.5, borderRadius: 0.5 }}>index.html/blog</Box> directly instead of accessing them through <Box component="code" sx={{ bgcolor: "background.paper", px: 0.5, borderRadius: 0.5 }}>index.html</Box>.
+          Note that you should block all public access to your s3 bucket for added security. However, note that CloudFront does not automatically serve the correct index.html file for subdirectory paths. This leads to an AccessDenied error when visiting routes like <Box component="code" sx={{ bgcolor: "background.paper", px: 0.5, borderRadius: 0.5 }}>/blog</Box> directly, because CloudFront looks for a corresponding file in S3 that doesn't exist.
         </Typography>
 
         <Typography variant="h6" sx={{ mt: 3 }}>Solution:</Typography>

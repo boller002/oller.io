@@ -34,6 +34,19 @@ const Blog = () => {
           In this post, I provide a high-level tutorial for building and hosting a static website in s3 served by a cloud distribution network (CDN).
         </Typography>
       </Box>
+      <Box sx={{ mb: 4 }}>
+        <Typography variant="h5" gutterBottom>
+          <Link component={RouterLink} to="/blog/full-stack-app" underline="hover" color="primary.main">
+            Full-Stack Web Application
+          </Link>
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Date: February 23, 2026
+        </Typography>
+        <Typography variant="body1" paragraph sx={{ mt: 1 }}>
+          In this post, I walk through building a full-stack web application with a Spring Boot backend, AWS RDS database, JWT authentication, and a React frontend deployed on AWS.
+        </Typography>
+      </Box>
     </Container>
   );
 };
