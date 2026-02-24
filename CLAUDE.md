@@ -92,8 +92,10 @@ npm run build
 ### Deploy
 ```bash
 npm run build
-AWS_PROFILE=oller.io aws s3 sync build s3://<frontend-bucket> --region us-east-1 --delete
-AWS_PROFILE=oller.io aws cloudfront create-invalidation --distribution-id <dist-id> --paths "/*" --region us-east-1
+AWS_PROFILE=oller.io aws s3 sync build s3://oller.io --region us-east-1 --delete
+AWS_PROFILE=oller.io aws s3 sync build s3://www.oller.io --region us-east-1 --delete
+AWS_PROFILE=oller.io aws cloudfront create-invalidation --distribution-id E1TEC3WJP7M542 --paths "/*" --region us-east-1
+AWS_PROFILE=oller.io aws cloudfront create-invalidation --distribution-id EEA0YV358BAHR --paths "/*" --region us-east-1
 ```
 
 ## AWS Resources (us-east-1)
