@@ -1,8 +1,13 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import logo from "../assets/logo.png";
+import { useColorMode } from "@boller002/ui";
+import logoLight from "../assets/logo-black.png";
+import logoDark from "../assets/logo.png";
 
 const Home = () => {
+  const { mode } = useColorMode();
+  const logo = mode === "dark" ? logoDark : logoLight;
+
   return (
     <Box
       sx={{

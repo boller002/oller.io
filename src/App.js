@@ -11,7 +11,8 @@ import FullStackApp from "./pages/posts/FullStackApp";
 import Todo from "./pages/posts/Todo";
 import Projects from "./pages/Projects";
 
-import logo from "./assets/logo.png";
+import logoLight from "./assets/logo-black.png";
+import logoDark from "./assets/logo.png";
 
 const navLinks = [
   { title: "Blog", path: "/blog" },
@@ -22,7 +23,7 @@ function App() {
   return (
     <Router>
       <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-        <Header logo={logo} navLinks={navLinks} />
+        <Header logo={logoLight} darkLogo={logoDark} navLinks={navLinks} />
         <Box component="main" sx={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
