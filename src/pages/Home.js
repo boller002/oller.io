@@ -10,8 +10,11 @@ const Home = () => {
   const inactiveLogo = mode === "dark" ? logoLight : logoDark;
 
   useEffect(() => {
-    const img = new Image();
-    img.src = inactiveLogo;
+    const id = requestIdleCallback(() => {
+      const img = new Image();
+      img.src = inactiveLogo;
+    });
+    return () => cancelIdleCallback(id);
   }, [inactiveLogo]);
 
   return (
