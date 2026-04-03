@@ -15,6 +15,7 @@ try {
       telemetries: ["errors", "performance", "http"],
       allowCookies: true,
       enableXRay: false,
+      signing: false,
     }
   );
 } catch (error) {
