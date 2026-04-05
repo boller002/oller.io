@@ -9,7 +9,6 @@
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.x",
     "@mui/material": "^5.x",
-    "aws-rum-web": "^2.0.0",
     "react": "^18.x",
     "react-dom": "^18.x",
     "react-router-dom": "^6.x",
