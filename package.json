@@ -9,6 +9,7 @@
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.x",
     "@mui/material": "^5.x",
+    "posthog-js": "^1.364.7",
     "react": "^18.x",
     "react-dom": "^18.x",
     "react-router-dom": "^6.x",
